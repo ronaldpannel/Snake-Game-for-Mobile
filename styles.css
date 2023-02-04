@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.gameWrapper {
+  border: green solid 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 410px;
+  height: 560px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.scores {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+p {
+  color: white;
+}
+p.name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+p.score {
+  font-size: 1.1rem;
+}
+
+.canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  max-width: 100%;
+  max-height: 100%;
+}
+.startBtn {
+  width: 125px;
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8rem;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  background-color: black;
+  padding: 3px 10px;
+  outline: none;
+  border: solid white 1px;
+  border-radius: 3px;
+  display: none;
+  cursor: pointer;
+}
+.startBtn:hover,
+.startBtn:focus {
+  color: orange;
+  border-color: orange;
+  display: block;
+}
+.hsResetBtn {
+  width: 125px;
+  position: absolute;
+  top: 90%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8rem;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  background-color: black;
+  padding: 3px 10px;
+  outline: none;
+  border: solid white 1px;
+  border-radius: 3px;
+  display: none;
+  cursor: pointer;
+}
+.hsResetBtn:hover,
+.hsResetBtn:focus {
+  color: orange;
+  border-color: orange;
+  display: block;
+}
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  display: none;
+}
+.active {
+  display: block;
+}
+.control {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  border: solid 1px white;
+  color: white;
+}
+.control.upBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.control.downBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+.control.leftBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+}
+.control.rightBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

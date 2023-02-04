@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="gulp" src="gulp.mp3"></audio>
+    <div class="gameWrapper">
+      <div class="scoreboard">
+        <p class="name">Snake Game</p>
+        <div class="scores">
+          <p class="score">Score: <span id="scoreValue">0</span></p>
+          <p class="score">High Score: <span id="highScoreValue">0</span></p>
+        </div>
+      </div>
+
+      <canvas class="canvas1" id="canvas1"> </canvas>
+      <button class="startBtn" id="startBtn">Start Game</button>
+      <button class="hsResetBtn" id="hsResetBtn">High Score RS</button>
+      <p class="gameOver" id="gameOver">Game Over</p>
+      <button class="control upBtn" id="upBtn">Up</button>
+      <button class="control downBtn" id="downBtn">Down</button>
+      <button class="control leftBtn" id="leftBtn">Left</button>
+      <button class="control rightBtn" id="rightBtn">Right</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
