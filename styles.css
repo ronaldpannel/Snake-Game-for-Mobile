@@ -10,7 +10,6 @@ body {
   overflow: hidden;
 }
 .gameWrapper {
-  border: green solid 1px;
   position: absolute;
   top: 50%;
   left: 50%;

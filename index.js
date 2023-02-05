@@ -130,8 +130,11 @@ window.addEventListener("load", function () {
       gulpSound.play();
       score++;
       scoreBoard.innerHTML = score;
-      appleX = Math.floor(Math.random() * tileCount);
-      appleY = Math.floor(Math.random() * tileCount);
+      // appleX = Math.floor(Math.random() * tileCount);
+      // appleY = Math.floor(Math.random() * tileCount);
+      appleX = Math.floor(Math.random() * (tileCount - 1 - 1)) + 1;
+      appleY = Math.floor(Math.random() * (tileCount - 1 - 1)) + 1;
+
       tailLength++;
     }
   }
@@ -169,21 +172,25 @@ window.addEventListener("load", function () {
 
   upBtn.addEventListener("click", (e) => {
     e.preventDefault;
+    if (velY == 1) return;
     velX = 0;
     velY = -1;
   });
   downBtn.addEventListener("click", (e) => {
     e.preventDefault;
+    if (velY == -1) return;
     velX = 0;
     velY = 1;
   });
   leftBtn.addEventListener("click", (e) => {
     e.preventDefault;
+    if (velX == 1) return;
     velX = -1;
     velY = 0;
   });
   rightBtn.addEventListener("click", (e) => {
     e.preventDefault;
+    if (velX == -1) return;
     velX = 1;
     velY = 0;
   });
