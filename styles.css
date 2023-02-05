@@ -59,7 +59,7 @@ p.score {
 .startBtn {
   width: 125px;
   position: absolute;
-  top: 90%;
+  top: 75%;
   left: 25%;
   transform: translate(-50%, -50%);
   color: white;
@@ -82,7 +82,7 @@ p.score {
 .hsResetBtn {
   width: 125px;
   position: absolute;
-  top: 90%;
+  top: 75%;
   left: 76%;
   transform: translate(-50%, -50%);
   color: white;

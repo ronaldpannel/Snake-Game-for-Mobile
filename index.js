@@ -10,6 +10,10 @@ window.addEventListener("load", function () {
   const gameOverText = document.getElementById("gameOver");
   const startBtn = document.getElementById("startBtn");
   const hsResetBtn = document.getElementById("hsResetBtn");
+  const upBtn = document.getElementById("upBtn");
+  const downBtn = document.getElementById("downBtn");
+  const leftBtn = document.getElementById("leftBtn");
+  const rightBtn = document.getElementById("rightBtn");
 
   let pointerPos;
   let speed = 3;
@@ -162,6 +166,27 @@ window.addEventListener("load", function () {
       velY = 0;
     }
   }
+
+  upBtn.addEventListener("click", (e) => {
+    e.preventDefault;
+    velX = 0;
+    velY = -1;
+  });
+  downBtn.addEventListener("click", (e) => {
+    e.preventDefault;
+    velX = 0;
+    velY = 1;
+  });
+  leftBtn.addEventListener("click", (e) => {
+    e.preventDefault;
+    velX = -1;
+    velY = 0;
+  });
+  rightBtn.addEventListener("click", (e) => {
+    e.preventDefault;
+    velX = 1;
+    velY = 0;
+  });
 
   startBtn.addEventListener("pointerdown", (e) => {
     window.location.reload();
