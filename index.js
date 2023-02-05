@@ -51,16 +51,16 @@ window.addEventListener("load", function () {
     drawSnake();
     drawApple();
     checkHighScore();
-    if (score > 2) {
+    if (score > 4) {
       speed = 5;
     }
-    if (score > 4) {
+    if (score > 8) {
       speed = 7;
     }
-    if (score > 6) {
+    if (score > 12) {
       speed = 11;
     }
-    if (score > 8) {
+    if (score > 14) {
       speed = 13;
     }
 
@@ -130,8 +130,6 @@ window.addEventListener("load", function () {
       gulpSound.play();
       score++;
       scoreBoard.innerHTML = score;
-      // appleX = Math.floor(Math.random() * tileCount);
-      // appleY = Math.floor(Math.random() * tileCount);
       appleX = Math.floor(Math.random() * (tileCount - 1 - 1)) + 1;
       appleY = Math.floor(Math.random() * (tileCount - 1 - 1)) + 1;
 
