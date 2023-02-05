@@ -8,6 +8,7 @@ body {
   background-color: black;
   font-family: monospace, Arial, Helvetica, sans-serif;
   overflow: hidden;
+  touch-action: none;
 }
 .gameWrapper {
   position: absolute;
@@ -114,30 +115,35 @@ p.score {
   display: block;
 }
 .control {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: black;
   border: solid 1px white;
   color: white;
+  touch-action: none;
 }
 .control.upBtn {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  touch-action: none;
 }
 .control.downBtn {
   position: absolute;
   bottom: 10px;
   left: 100px;
+  touch-action: none;
 }
 .control.leftBtn {
   position: absolute;
   bottom: 10px;
   right: 100px;
+  touch-action: none;
 }
 .control.rightBtn {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  touch-action: none;
 }
